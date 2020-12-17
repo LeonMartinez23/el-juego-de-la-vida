@@ -67,6 +67,11 @@ Nave ligera (Lightweight spaceship): Se desplaza a lo largo del tablero de forma
 
 # Requisitos
 
- - Python 3.8.5 ó superior
- - Pygame 2.0.2 ó superior
+ - Python 3.7.7 o superior (esencial para pygame)
+ - Pygame 2.0.0 o superior
+ - Numpy 1.17.4 o superior
  - Se creo y ejecuto en Linux, pero tambien puede ser ejecutado en Windows.
+
+### Para instalar pygame ejecutar
+
+`$ pip3 install pygame`
