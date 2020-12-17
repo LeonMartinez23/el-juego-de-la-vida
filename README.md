@@ -30,41 +30,6 @@ vivas su estado futuro en el siguiente turno será
 el de célula viva (nacimiento de nuevo
 individuo)
 
-## Patrones
-
-Antes de seguir profundizando en el juego es necesario definir lo que se denominan patrones básicos. Los patrones básicos no son más que configuraciones de vecindades de células que determinan un comportamiento concreto con un número mínimo de células vivas en la estructura. Estos patrones básicos y sus comportamientos han sido determinados o hallado por aficionados al juego en el cual veían un desafío de programación, de hecho se extendió todo un movimiento en torno a este juego, que en ocasiones llegaba a tener connotaciones filosóficas. Llegaron a crearse concursos de búsqueda de patrones interesantes, incluso el propio Conway ofreció un premio de 50 dólares para aquel que encontrara un patrón que creciera de forma indefinida.
-
-Algunos de los patrones que suelen aparecer en el juego de la vida son:
-
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAACVBMVEX////AwMAAAADw4bE0AAABoElEQVR4nO3UMa4bMRAFQdn3P/Q3FBpgQo/kbbJe2oBGFSxfvw7f63//gU/vD/C12DvnG2C9AdYbYL0B1htgvQHWG2C9AdYbYL0B1htgvd0APHuA9d0AfM6D4BXdaID1BlhvgPUGWG+A9QZYb4D1BlhvgPUGWG+A9fbOJw+wvhuAn/jofy/2L7+51wD3GuDwvXUD3GuAw/fWDXCvAQ7fWzfAvQY4fG/dAPca4PC9dQPca4DD99YNcK8BDt9bN8C99ijg2QOs7wbgdz/6bz9AgPMNcPQe4HwDHL0HON8AR+8BzjfA0XuA8w1w9B7gfAMcvQc43wBH7wHOt68Dzx5gfTcAP/FY7LaPPDKAgICAgICAgICAgICAgICAgICAgH8Bzx5gfTcA5z/sJzXAegOsN8B6A6w3wHoDrDfAegOsN8B6A6w3wHq7AXj2AOu7AficB8ErutEA6w2w3gDrDbDeAOsNsN4A6w2w3gDrDbDeAOvtnU8eYH03AJ/zIHhFNxpgvQHWG2C9AdYbYL0B1htgvQHWG2C9AdYbYL2988k7HvgDKgBKgW82od0AAAAASUVORK5CYII=">
-
--Deslizador (Glider): es el patrón astronave más pequeño que se conoce así como el más común. Se desplaza a lo largo del tablero de forma diagonal y tiene una velocidad de “c/4”.
-
-La colmena (Beehive): pueden encontrarse de forma aislada, pero lo mas común esque aparezca de forma apareada o en grupos de cuatro formando el patron pseudo-inmortal llamado “panal de miel” (Honey farm).
-
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh23pJqSMGDS7McGGwtHtUvh0-U-gmEXbhmw&usqp=CAU">
-
-Nave ligera (Lightweight spaceship): Se desplaza a lo largo del tablero de forma horizontal o vertical.
-
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi6WQhc1o0la7O_N1subt5jdJIcGZ7RGrZ0w&usqp=CAU">
-
-# Pseudocódigo
-
-- Crear la base donde se ejecutara todo con pygame
-- Crear el patrón
-- Iniciar el juego
-- Ejecutar las reglas de la vida
-- Una célula muerta con exactamente 3 células vecinas vivas "nace"
-- Una célula viva con 2 o 3 células vecinas vivas sigue viva, caso contraio muere
-- Hacer que cada regla se ejecute haciendo consultas a las diferentes celdas que rodean una "celula" viva
-- Repetir las reglas con un bucle
-- Crear una funcion donde "q" detenga el juego
-
-#### *Condiciones adicionales*
-
-- Si aprieto una tecla, que esta detenga o reanude el juego
-- Para detener el juego declaro que el ciclo se detenga con un False, caso contraio True
-
 # Requisitos
 
  - Python 3.7.7 o superior (esencial para pygame)
