@@ -60,7 +60,7 @@ Nave ligera (Lightweight spaceship): Se desplaza a lo largo del tablero de forma
 - Repetir las reglas con un bucle
 - Crear una funcion donde "q" detenga el juego
 
-#### Condiciones adicionales
+#### *Condiciones adicionales*
 
 - Si aprieto una tecla, que esta detenga o reanude el juego
 - Para detener el juego declaro que el ciclo se detenga con un False, caso contraio True
